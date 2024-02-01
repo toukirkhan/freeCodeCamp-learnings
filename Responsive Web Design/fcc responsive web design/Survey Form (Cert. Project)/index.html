@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id=title>Academic Survey Form</h1>
+    <p id="description">This an Academic Survey Form for your regular Academic Feedbacks</p>
+    <form id="survey-form">
+        <fieldset>
+            <legend>Basic Details</legend>
+            <label id="name-label">Enter your Name: <input type="text" name="name" id="name" placeholder="Enter Full Name" required></label>
+            <label id="email-label">Enter your Email: <input type="email" name="name" id="email" required placeholder="Enter correct Email"></label>
+            <label id="number-label">Enter your Roll No. : <input type="number" name="number" id="number" pattern="[0-9]" min="0" max="50" placeholder="25"></label>
+            <label for="dropdown">Select your Standard: <select id="dropdown" name="dropdown">
+                <option value=" ">choose one</option>
+                <option value="1">11th Std</option>
+                <option value="2">12th Std</option>
+            </select></label>
+        </fieldset>
+        <fieldset>
+            <legend>Choose your Section</legend>
+            <label><input type="radio" name="section" value="A" checked class="inline">Section A</label>
+            <label><input type="radio" name="section" value="B" class="inline">Section B</label>
+        </fieldset>
+        <fieldset>
+            <legend>Select the subjects which are part of your course:</legend>
+            <label><input type="checkbox" name="subject" value="Physics" class="inline">Physics</label>
+            <label><input type="checkbox" name="subject" value="Chemistry" class="inline">Chemistry</label>
+            <label><input type="checkbox" name="subject" value="Maths" class="inline">Maths</label>
+            <label><input type="checkbox" name="subject" value="Biology" class="inline">Biology</label>
+            <label><input type="checkbox" name="subject" value="Accountancy" class="inline">Accountancy</label>
+            <label><input type="checkbox" name="subject" value="Business Studies" class="inline">Business Studies</label>
+            <label><input type="checkbox" name="subject" value="Economics" class="inline">Economics</label>
+        </fieldset>
+        <fieldset>
+            <legend>Submit your feedback for the curriculum over here</legend>
+            <textarea name="feedback" id="feedback" cols="50" rows="10" placeholder="Enter your feedback here"></textarea>
+            <input type="submit" value="Submit" id="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
